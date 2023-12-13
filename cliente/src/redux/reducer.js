@@ -4,7 +4,7 @@ const initialState = {
     pokemon: [],
 }
 
-const Reducer = (state = initialState, action) =>{
+const rootReducer = (state = initialState, action) =>{
     switch(action.type){
         case GET_POKEMONS:
             return{
@@ -13,4 +13,4 @@ const Reducer = (state = initialState, action) =>{
             }
     }
 }
-export default Reducer
+export default rootReducer
