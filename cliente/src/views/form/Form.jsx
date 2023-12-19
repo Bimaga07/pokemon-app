@@ -1,3 +1,5 @@
+import '../form/form.style.css'
+
 const Form = () =>{
     return(
         <div>

@@ -1,3 +1,5 @@
+import '../detail/detail.style.css'
+
 const Detail =() =>{
     return (
         <div>

@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:ital,wght@1,500&display=swap');
+
+.card {
+
+
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(250, 246, 9, 0.493);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }

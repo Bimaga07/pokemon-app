@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    margin: 0;
+
+    background-image: url('../../imagenes/pokemon.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
