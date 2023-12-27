@@ -1,6 +1,6 @@
  import '../card/card.style.css'
-const Card = ({poke}) => {
-   const {id, name, image, hp, attack, types} = poke
+const Card = ({id, name, image, hp, attack, types}) => {
+
     return (
         <div className="card" key={id}>
             <p>name: {name}</p>

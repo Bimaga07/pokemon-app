@@ -1,0 +1,11 @@
+.serbach{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.inputer{
+    border-radius: 30px;
+    width: 300px;
+}

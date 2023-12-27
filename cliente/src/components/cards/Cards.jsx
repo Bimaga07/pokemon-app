@@ -1,4 +1,4 @@
-import '../cards/cards.style.css'
+/*  import '../cards/cards.style.css'
 import Card from "../card/Card"
 
 
@@ -7,8 +7,8 @@ const Cards = ({pokemons}) =>{
     
    return (
     <div className='cards'>
-       {pokeList?.map(poke => <Card key={poke.id} poke={poke} />)}
+       {pokeList?.map(poke, index => <Card key={index} {...poke} />)}
     </div>
    )
 }
-export default Cards
+export default Cards  */

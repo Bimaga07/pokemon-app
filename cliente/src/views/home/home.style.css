@@ -3,7 +3,17 @@ body{
 }
 
 .home{
-   
+ 
+  
     background-color: aliceblue
    
 }
+
+.cards{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px;
+  padding: 25px;
+
+} 
