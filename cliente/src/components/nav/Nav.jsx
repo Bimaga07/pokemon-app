@@ -4,16 +4,15 @@ import '../nav/nav.style.css'
 
 const Nav = () =>{
     return (
-       <div>
-        <Link to='/home'> Home
+        <div className='navCont'>
+        <Link to='/home' className='link' > Home
         </Link>
+           <SearchBar/>
         <Link to='/create'> Created
         </Link>
-        <div>
-
-        <SearchBar/>
         </div>
-       </div>
+
+        
     )
 }
 export default Nav

@@ -122,7 +122,7 @@ const handleClick = (e) => {
         {currentPokemons?.map((elem, index) => {
                 //console.log("Current Pokemons:", currentPokemons);
                 return (
-                    <Link key={index} to={`/detail/${elem.id}` } >
+                    <Link key={index} to={`/detail/${elem.id}`} className='linktext'>
                         <Card
                             name={elem.name}
                             hp={elem.hp}

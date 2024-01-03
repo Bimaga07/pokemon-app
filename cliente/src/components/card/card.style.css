@@ -1,16 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:ital,wght@1,500&display=swap');
 
-.card {
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+
+.card {
+  width: 200px; /* Establece el ancho deseado */
+  height: 300px;
     border-radius: 50px;
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    animation: fadeInUp 0.5s ease-in-out;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgba(250, 246, 9, 0.384);
+    color: rgb(238, 223, 13);
+    background-color: rgba(9, 65, 250, 0.144);
   }
   
   .card img {
@@ -21,4 +35,11 @@
   
   .card p {
     margin: 5px 0;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card.hovered {
+    transform: translateY(-10px);
   }

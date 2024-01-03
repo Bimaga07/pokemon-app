@@ -16,3 +16,25 @@ body{
     background-attachment: fixed;
 
 }
+.poke{
+    display: block;
+    /* Cambiar a display: block para ajustar el tamaño */
+    width: 50px;
+    /* Tamaño de la pokebola */
+    height: 100px;
+    position: absolute;
+    bottom: 10%;
+    /* Ajustar la posición vertical */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.9;
+    top: 10%; /* Centrar verticalmente en la pantalla */
+    left: 25%; /* Mover a la izquierda */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.poke:hover {
+    transform: scale(1.1); /* Agranda la pokebola al pasar el cursor */
+    filter: brightness(1.5); /* Aumenta el brillo de la pokebola */
+}

@@ -1,16 +1,21 @@
-body{
+
   
 
 .home{
     
-    margin: 0;
     background-position: center;
     background-size: cover;
-    background-image: url('../../imagenes/Fondos-de-pantalla-pokemon.jpg');
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../../imagenes/pokemonhome.jpg');
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
 }
    
-}
+
 
 .cards{
     display: flex;
@@ -18,5 +23,24 @@ body{
   flex-wrap: wrap;
   margin: 25px;
   padding: 25px;
-   
+    text-decoration: none;
 } 
+select{
+   
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    border: 3px solid #ffe607f3;
+    border-radius: 45px;
+   transition: 0.3s;
+    cursor: pointer;
+    background: rgba(214, 150, 11, 0.952);
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px,
+      rgba(0, 0, 0, 0.349) 5px 1px 10px 3px, rgba(1, 0, 0, 0.2) 0px -1px 2px inset;
+}
+.linktext{
+    text-decoration: none;
+}

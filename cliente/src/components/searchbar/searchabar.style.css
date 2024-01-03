@@ -4,8 +4,26 @@
     align-content: flex-start;
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 .inputer{
-    border-radius: 30px;
-    width: 300px;
+    border-radius: 20px;
+    width: 400px;
+    height: 30px;
+   
+  font-size: 12px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  padding: 5px;
+}
+.buttonsearch{
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño del texto */
+     padding: 5px 10px; /* Padding vertical y horizontal */
+     background-color: rgb(255, 230, 0);
+     margin-left: 10px;
+}
+.buttonsearch:hover{
+    transform: scale(1.10);
 }

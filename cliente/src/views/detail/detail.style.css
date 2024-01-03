@@ -24,13 +24,13 @@
     width: 100px;
     align-items: center;
     justify-content: center;
-    background-color: #eeeeee4b;
+    background-color: #ebd618c5;
     border-radius: 10px;
     letter-spacing: 1px;
     transition: all 0.2s linear;
     cursor: pointer;
     border: none;
-    background: #fff;
+    background: #e2bc14;
     margin-top: 20px;
     margin-left: 30rem;
 }

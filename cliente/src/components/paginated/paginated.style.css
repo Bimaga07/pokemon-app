@@ -8,7 +8,7 @@
     --margin: 6px;
     margin: 0 var(--margin);
     border-radius: 15px;
-    background: whitesmoke;
+    background: rgba(248, 224, 3, 0.705);
     max-width: auto;
     min-width: var(--size);
     height: var(--size);
@@ -17,7 +17,10 @@
     justify-content: center;
     cursor: pointer;
     padding: 0 6px;
-    color: rgb(45, 85, 55);
-    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px,
+    color: rgb(20, 19, 20);
+    box-shadow: rgba(7, 7, 7, 0.877) 3px 8px 12px,
      rgba(0, 0, 0, 0.3) 5px 1px 10px 3px, rgba(1, 0, 0, 0.2) 0px -1px 2px inset;
+}
+.buttonP:hover{
+    transform: scale(1.10);
 }

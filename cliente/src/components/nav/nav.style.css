@@ -1,0 +1,17 @@
+.navCont{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.navLinkCont{
+    display: flex;
+    width: 14rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8vw;
+    
+    }
+    .link{
+        text-decoration: none;
+    }

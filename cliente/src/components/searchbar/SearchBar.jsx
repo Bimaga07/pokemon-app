@@ -31,7 +31,8 @@ const SearchBar = () => {
         >
             
        </input>
-       <button type='submit'
+       <button className="buttonsearch"
+        type='submit'
        onClick={(event) => handleSubmit(event)}>Buscar</button>
         </div>
     )
