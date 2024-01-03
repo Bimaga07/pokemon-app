@@ -1,0 +1,34 @@
+.imagenfor{
+    background-image: url('../../imagenes/pikachu.jpg');
+    background-size: cover;
+    background-position: center; /* Centra la imagen de fondo */
+  height: 200vh; 
+  
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 0, 0.288); /* O el tono de amarillo que prefieras */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Ajusta según sea necesario */
+    margin: 20px auto; /* Centra el formulario en la página */
+    margin-top: 28px;
+}
+.formulario {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #cccccc; /* Añade un borde para resaltar los campos */
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.butoon{
+    background-color: #af4c4c94; /* Color verde, puedes cambiarlo según tu preferencia */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }

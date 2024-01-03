@@ -1,11 +1,14 @@
 body{
-    margin: 0;
-}
+  
 
 .home{
- 
-  
-    background-color: aliceblue
+    
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../imagenes/Fondos-de-pantalla-pokemon.jpg');
+    height: 100vh;
+}
    
 }
 
@@ -15,5 +18,5 @@ body{
   flex-wrap: wrap;
   margin: 25px;
   padding: 25px;
-
+   
 } 

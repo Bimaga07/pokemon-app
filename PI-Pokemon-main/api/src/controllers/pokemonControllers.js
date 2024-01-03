@@ -38,7 +38,7 @@ const getPokemonsDb = async () => {
             attributes: ["name"],
         }
     });
-    console.log("allPokemonsDb:", allPokemonsDb);
+    //console.log("allPokemonsDb:", allPokemonsDb);
     
     const mapPoke = allPokemonsDb.map((e) => {
        // console.log("e:", e)
@@ -59,28 +59,29 @@ const getPokemonsDb = async () => {
     return mapPoke;
 };
 
+
 const getAllPokemons = async (name) => {
-    
     const pokemonsDb = await getPokemonsDb();
     const pokemonsApi = await getPokemonsApi();
-    //const [pokemonsDb, pokemonsApi] = await Promise.all([getPokemonsDb(), getPokemonsApi()]);
-    const allPokemons = [...pokemonsDb, ...pokemonsApi];//pokemonsDb.concat(pokemonsApi);
-    
-    let pokemonName;
-    if(name) {
-        pokemonName = allPokemons.filter(
-            (e) => e.name.toLowerCase().includes(name.toLowerCase())
+
+    const allPokemons = [...pokemonsDb, ...pokemonsApi];
+
+    let filteredPokemons = allPokemons;
+
+    if (name) {
+        const lowerCaseName = name.toLowerCase();
+        filteredPokemons = allPokemons.filter(
+            (pokemon) => pokemon.name.toLowerCase().includes(lowerCaseName)
         );
-        if(pokemonName.length) return pokemonName;
-        throw new Error("No se encontro ningun pokemon con ese nombre")
     }
-    
-    return allPokemons
+
+    return filteredPokemons;
 };
 
 const getPokemonById = async (id) => {
-    //console.log(id)
+   
     const all = await getAllPokemons();
+    //const byId = all.find((e) => String(e.id) === id);
     const byId = await all.filter((e) => String(e.id) === id);
 
     if(byId.length) {

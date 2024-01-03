@@ -9,14 +9,18 @@ const SearchBar = () => {
 
 
     const handleInputChage = (event) => {
-        event.preventDefault()
+       event.preventDefault()
         setName(event.target.value)
     }
 
     const handleSubmit = (event) =>{
         event.preventDefault()
-        dispatch(getNamePokemons(name))    
+        dispatch(getNamePokemons(name)) 
     }
+
+      
+        
+        
     return(
         <div className='serbach'>
 

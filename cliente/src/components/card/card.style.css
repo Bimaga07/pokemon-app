@@ -3,14 +3,14 @@
 
 .card {
 
-  
+    border-radius: 50px;
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
     width: 200px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgba(250, 246, 9, 0.493);
+    background-color: rgba(250, 246, 9, 0.384);
   }
   
   .card img {

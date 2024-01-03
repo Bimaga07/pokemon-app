@@ -6,8 +6,8 @@ const Card = ({id, name, image, hp, attack, types}) => {
             <p>name: {name}</p>
             
             <img src={image} alt= {name} />
-            <p>hp: {hp}</p>
-            <p>Attack: {attack}</p>
+            
+            
             {types.map((e, index) => (
                 <p key={index}>{e}</p>
             ))}

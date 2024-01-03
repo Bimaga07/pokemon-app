@@ -7,9 +7,10 @@ import { getDetail } from '../../redux/action'
 const Detail =() =>{
     let {id} = useParams()
 
+    const detailPokemon = useSelector((state) => state.detail) 
     const dispatch = useDispatch()
 
-    useEffect(()=> {
+    useEffect(() => {
         dispatch(getDetail(id))
         return () => {
             dispatch({
@@ -17,9 +18,8 @@ const Detail =() =>{
                 payload: {}
             })
         }
-    }, [dispatch, id])
-
-    const detailPokemon = useSelector((state) => state.detail)
+    }, [dispatch])
+    
     const typeColors = {
         fire: "#F57D31",
         normal: "#AAA67F",
@@ -46,14 +46,14 @@ const Detail =() =>{
     if(!detailPokemon) return <p>loading...</p>
     console.log('esto' ,detailPokemon);
     return (
-        <div >
+        <div  className='container'>
             <Link to='/home'>
-            <button>volver</button>
+            <button className='button'>volver</button>
             </Link>
             {
                 detailPokemon.length > 0 ? (
                   
-                        <div
+                        <div className='detailconter'
                             
                             style={{
                                 backgroundColor: typeColors[detailPokemon[0]?.types[0]],
